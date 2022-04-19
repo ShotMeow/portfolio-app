@@ -11,6 +11,7 @@ body {
     background: url('../images/background.jpg');
     background-size: cover;
     font-family: 'Inter';
+    color: $primary;
 }
 
 button {
@@ -36,3 +37,4 @@ a {
 
 @import "_header";
 @import "_footer";
+@import "_first-screen";

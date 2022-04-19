@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0px;
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        .aside__line {
+            height: 140px;
+            width: 1px;
+            background-color: $primary;
+            opacity: 0.5;
+        }
+
+        .aside__article {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .aside__span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .aside__counter {
+            text-align: center;
+            line-height: 150%;
+        }
+
+        .aside__progress-bar {
+            width: 2px;
+            height: 268px;
+            background-color: $secondary;
+
+            .aside__progress {
+                background-color: $primary;
+                height: 10vh;
+            }
+        }
+    }
+
+    .main__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .main__heading {
+        font-size: 64px;
+    }
+
+    .main__text {
+        color: $secondary;
+        font-size: 20px;
+        width: 60%;
+        letter-spacing: 0.05em;
+    }
+}

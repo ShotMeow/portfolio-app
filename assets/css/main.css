@@ -30,6 +30,7 @@ body {
   background: url("../images/background.jpg");
   background-size: cover;
   font-family: 'Inter';
+  color: #fff;
 }
 
 button {
@@ -98,6 +99,16 @@ a {
   padding: 50px 0px;
 }
 
+@media (max-width: 425px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,5 +124,102 @@ a {
 
 .social__list .social__link:hover {
   color: #fff;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin: 50px 0px;
+}
+
+.main .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+
+.main .page .aside__line {
+  height: 140px;
+  width: 1px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.main .page .aside__article {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .page .aside__article .aside__span {
+  font-size: 20px;
+}
+
+.main .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.main .progress .aside__counter {
+  text-align: center;
+  line-height: 150%;
+}
+
+.main .progress .aside__progress-bar {
+  width: 2px;
+  height: 268px;
+  background-color: #878787;
+}
+
+.main .progress .aside__progress-bar .aside__progress {
+  background-color: #fff;
+  height: 10vh;
+}
+
+.main .main__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main .main__heading {
+  font-size: 64px;
+}
+
+.main .main__text {
+  color: #878787;
+  font-size: 20px;
+  width: 60%;
+  letter-spacing: 0.05em;
 }
 /*# sourceMappingURL=main.css.map */
