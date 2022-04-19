@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+
+    .header__logo {
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+
+        .logo__span:first-child {
+            letter-spacing: 0.27em;
+        }
+
+        .logo__span:last-child {
+            letter-spacing: 0.1em;
+        }
+    }
+}

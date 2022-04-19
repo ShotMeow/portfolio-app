@@ -1,0 +1,38 @@
+@import "_var";
+@import "_fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../images/background.jpg');
+    background-size: cover;
+    font-family: 'Inter';
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+.container {
+    max-width: 1500px;
+    width: 95%;
+    margin: auto;
+}
+
+@import "_header";
+@import "_footer";
