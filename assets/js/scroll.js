@@ -43,4 +43,29 @@ export const scroll = () => {
         positionCheck(targetID)
     })
 
+    window.addEventListener('wheel', (e) => {
+        if (e.wheelDelta > 0) {
+            if (links[0].getAttribute('href') == targetID)
+                return
+            for (let i = 0; i < links.length; i++) {
+                if (links[i].getAttribute('href') == targetID) {
+                    targetID = links[i - 1].getAttribute('href')
+                    routing(targetID)
+                    break
+                }
+            }
+            positionCheck(targetID)
+        } else {
+            if (links[links.length - 1].getAttribute('href') == targetID)
+                return
+            for (let i = 0; i < links.length; i++) {
+                if (links[i].getAttribute('href') == targetID) {
+                    targetID = links[i + 1].getAttribute('href')
+                    routing(targetID)
+                    break
+                }
+            }
+            positionCheck(targetID)
+        }
+    })
 }
