@@ -10,8 +10,8 @@
 body {
     background-image: url('../images/background.jpg');
     background-color: #0E111D;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
     font-family: 'Inter';
     color: $primary;
 }
@@ -20,6 +20,7 @@ button {
     border: none;
     background: none;
     cursor: pointer;
+    color: $primary;
 }
 
 ul {
@@ -40,3 +41,7 @@ a {
 @import "_header";
 @import "_footer";
 @import "_first-screen";
+@import "_sections";
+@import "_about";
+@import "_portfolio";
+@import "_contact";

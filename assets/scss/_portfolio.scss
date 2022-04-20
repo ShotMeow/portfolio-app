@@ -1,0 +1,101 @@
+.portfolio {
+    margin-top: 100vh;
+    padding: 150px 0px 250px;
+
+    @media (max-width: 768px) {
+        padding: 0px 0px 100px 0px;
+    }
+
+    .main__article {
+
+        @media (max-width: 768px) {
+            margin: auto;
+        }
+
+
+        .article__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            .article__card-link {
+                &:first-child>.article__card {
+                    background-image: url('../images/cloud-skinchanger.jpg');
+
+                    @media (max-width: 1150px) {
+                        background-image: none;
+                    }
+                }
+
+                &:nth-child(2)>.article__card {
+                    background-image: url('../images/anime-zero.jpg');
+
+                    @media (max-width: 1150px) {
+                        background-image: none;
+                    }
+                }
+
+                &:nth-child(3)>.article__card {
+                    background-image: url('../images/driving-school.jpg');
+
+                    @media (max-width: 1150px) {
+                        background-image: none;
+                    }
+                }
+
+                &:nth-child(4)>.article__card {
+                    background-image: url('../images/yandex-music.jpg');
+
+                    @media (max-width: 1150px) {
+                        background-image: none;
+                    }
+                }
+            }
+
+            .article__card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 90px;
+                width: 60vw;
+                background-color: #10121B;
+                background-repeat: no-repeat;
+                background-position: right;
+                border-radius: 5px;
+                box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.25);
+                padding: 30px;
+
+                .card__info {
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+
+                    .card__item {
+                        font-size: 24px;
+                    }
+
+                    .card__text-block {
+                        display: flex;
+                        flex-direction: column;
+
+                        .card__name {
+                            font-size: 20px;
+                        }
+
+                        .card__skills {
+                            font-size: 14px;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .aside__progress {
+        height: 75%;
+        width: 100%;
+        background-color: $primary;
+    }
+}

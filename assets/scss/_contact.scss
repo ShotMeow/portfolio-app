@@ -1,0 +1,38 @@
+.contact {
+    .aside__progress {
+        height: 100%;
+        width: 100%;
+        background-color: $primary;
+    }
+
+    .article__title {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .article__subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        color: $secondary;
+        margin-bottom: 60px;
+    }
+
+    .article__email {
+        font-size: 48px;
+    }
+
+    .article__social-subtitle {
+        margin-top: 60px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        display: flex;
+        gap: 30px;
+
+        &__link {
+            color: $secondary;
+        }
+    }
+}

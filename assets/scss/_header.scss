@@ -9,7 +9,7 @@
     width: inherit;
     max-width: inherit;
 
-    .header__logo {
+    &__logo {
         font-weight: 600;
         display: flex;
         flex-direction: column;

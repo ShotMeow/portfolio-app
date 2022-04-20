@@ -1,0 +1,88 @@
+.main__section {
+    height: calc(100vh - 127px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 95px;
+
+    .article__title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 150px;
+
+        @media (max-width: 1150px) {
+            margin-bottom: 50px;
+        }
+
+        .article__title-background {
+            opacity: 0.05;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 128px;
+            position: absolute;
+            top: -60px;
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+
+        .article__title {
+            font-size: 64px;
+        }
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        .aside__line {
+            position: relative;
+            height: 150px;
+            width: 1px;
+            background-color: $primary;
+            opacity: 0.5;
+        }
+
+        .aside__circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aside__article {
+            font-size: 20px;
+        }
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .aside__article {
+            text-align: center;
+            line-height: 150%;
+        }
+
+        .aside__progress-bar {
+            width: 2px;
+            height: 250px;
+            background-color: $secondary;
+        }
+    }
+
+    .main__aside {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
