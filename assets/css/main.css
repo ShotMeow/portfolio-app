@@ -27,8 +27,10 @@
 }
 
 body {
-  background: url("../images/background.jpg");
+  background-image: url("../images/background.jpg");
+  background-color: #0E111D;
   background-size: cover;
+  height: 100vh;
   font-family: 'Inter';
   color: #fff;
 }
@@ -65,6 +67,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 0px;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  max-width: inherit;
 }
 
 .header .header__logo {
@@ -97,6 +103,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 0px;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  max-width: inherit;
 }
 
 @media (max-width: 425px) {
@@ -137,7 +147,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
-  margin: 50px 0px;
+  margin: 200px 200px;
 }
 
 .main .page {
@@ -152,6 +162,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 60px;
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  top: 50%;
+  left: 0;
+  margin: -200px 0px 0px -200px;
 }
 
 .main .page .aside__line {
@@ -189,6 +205,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  top: 50%;
+  right: 0;
+  margin: -200px 0px 0px -200px;
 }
 
 .main .progress .aside__counter {
@@ -210,10 +232,12 @@ a {
 .main .main__subtitle {
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .main .main__heading {
   font-size: 64px;
+  margin-bottom: 20px;
 }
 
 .main .main__text {

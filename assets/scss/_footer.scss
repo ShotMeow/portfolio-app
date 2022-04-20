@@ -4,6 +4,11 @@
     align-items: center;
     padding: 50px 0px;
 
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    max-width: inherit;
+
     @media (max-width: 425px) {
         flex-direction: column-reverse;
         gap: 30px;

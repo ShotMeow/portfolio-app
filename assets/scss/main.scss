@@ -8,8 +8,10 @@
 }
 
 body {
-    background: url('../images/background.jpg');
+    background-image: url('../images/background.jpg');
+    background-color: #0E111D;
     background-size: cover;
+    height: 100vh;
     font-family: 'Inter';
     color: $primary;
 }
