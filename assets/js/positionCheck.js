@@ -14,9 +14,11 @@ export const positionCheck = (targetID) => {
     if (targetID != links[links.length - 1].getAttribute('href')) {
         arrowBottom.classList.remove('hidden')
         social.style.transform = 'translateY(0px)'
+        arrowTop.style.transform = 'rotate(180deg)'
     }
     else {
         arrowBottom.classList.add('hidden')
         social.style.transform = 'translateY(200px)'
+        arrowTop.style.transform = 'rotate(180deg) translateY(-50px)'
     }
 }

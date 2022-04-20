@@ -8,12 +8,12 @@ export const navigator = () => {
             for (let i = 0; i < buttons.length; i++) {
                 if (buttons[i].id == button.id) {
                     buttons[i].closest('li').classList.add('active')
-                    articles[i].classList.remove('hidden')
+                    articles[i].classList.remove('hidden-full')
                     heading.querySelector('.article__title-background').textContent = buttons[i].querySelector('.navigator__name').textContent
                     heading.querySelector('.article__title').textContent = buttons[i].querySelector('.navigator__name').textContent
                 } else {
                     buttons[i].closest('li').classList.remove('active')
-                    articles[i].classList.add('hidden')
+                    articles[i].classList.add('hidden-full')
                 }
             }
         })
@@ -26,10 +26,10 @@ export const navigator = () => {
             for (let i = 0; i < technologies.length; i++) {
                 if (technologies[i] == button) {
                     technologies[i].classList.add('active')
-                    lists[i].classList.remove('hidden')
+                    lists[i].classList.remove('hidden-full')
                 } else {
                     technologies[i].classList.remove('active')
-                    lists[i].classList.add('hidden')
+                    lists[i].classList.add('hidden-full')
                 }
             }
         })
