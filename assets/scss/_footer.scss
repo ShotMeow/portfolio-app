@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 50px 0px;
 
     position: fixed;
@@ -12,6 +12,20 @@
     @media (max-width: 425px) {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .footer__arrow {
+            transition: all 0.2s ease;
+        }
+
+        .top {
+            transform: rotate(180deg);
+        }
     }
 }
 

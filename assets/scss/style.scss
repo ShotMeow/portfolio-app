@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../images/background.jpg');
     background-color: #0E111D;
@@ -14,6 +18,7 @@ body {
     background-size: cover;
     font-family: 'Inter';
     color: $primary;
+    overflow: hidden;
 }
 
 button {
@@ -36,6 +41,11 @@ a {
     max-width: 1500px;
     width: 95%;
     margin: auto;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 @import "_header";

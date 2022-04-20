@@ -6,26 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | ShotMeow</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a href="/" class="header__logo logo">
+            <a href="#firstScreen" class="header__logo logo">
                 <span class="logo__span">SHOT</span>
                 <span class="logo__span">MEOW</span>
             </a>
-            <button class="header__menu">
-                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M25.75 17H13V14.1667H25.75V17ZM25.75 9.91667H0.25V7.08333H25.75V9.91667ZM25.75 2.83333H0.25V0H25.75V2.83333Z"
-                        fill="white" />
-                </svg>
-            </button>
+            <div class="header__menu">
+                <nav class="header__nav nav">
+                    <ul class="nav__list hidden">
+                        <li class="nav__element"><a href="#firstScreen" class="nav__link">Главная</a></li>
+                        <li class="nav__element"><a href="#about" class="nav__link">Обо мне</a></li>
+                        <li class="nav__element"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                        <li class="nav__element"><a href="#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="header__button">
+                    <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.75 17H13V14.1667H25.75V17ZM25.75 9.91667H0.25V7.08333H25.75V9.91667ZM25.75 2.83333H0.25V0H25.75V2.83333Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
         </header>
         <main class="main">
-            <section class="main__section first-screen">
+            <section class="main__section first-screen" id="firstScreen">
                 <aside class="main__aside page">
                     <div class="aside__line"></div>
                     <div class="aside__circle">
@@ -48,7 +59,7 @@
                     </div>
                 </aside>
             </section>
-            <section class="main__section about">
+            <section class="main__section about" id="about">
                 <aside class="main__aside page">
                     <div class="aside__line"></div>
                     <div class="aside__circle">
@@ -95,7 +106,7 @@
                     </div>
                 </aside>
             </section>
-            <section class="main__section portfolio">
+            <section class="main__section portfolio" id="portfolio">
                 <aside class="main__aside page">
                     <div class="aside__line"></div>
                     <div class="aside__circle">
@@ -200,7 +211,7 @@
                     </div>
                 </aside>
             </section>
-            <section class="main__section contact">
+            <section class="main__section contact" id="contact">
                 <aside class="main__aside page">
                     <div class="aside__line"></div>
                     <div class="aside__circle">
@@ -245,13 +256,22 @@
                     <li class="social__element"><a href="https://t.me/ShotMeow" class="social__link">telegram</a></li>
                 </ul>
             </div>
-            <button class="footer__arrow">
-                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.29289 23.7071C7.68342 24.0976 8.31658 24.0976 8.70711 23.7071L15.0711 17.3431C15.4616 16.9526 15.4616 16.3195 15.0711 15.9289C14.6805 15.5384 14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315 15.9289C1.95262 15.5384 1.31946 15.5384 0.928933 15.9289C0.538409 16.3195 0.538409 16.9526 0.928933 17.3431L7.29289 23.7071ZM7 4.37114e-08L7 23L9 23L9 -4.37114e-08L7 4.37114e-08Z"
-                        fill="white" />
-                </svg>
-            </button>
+            <div class="footer__actions">
+                <button class="footer__arrow top hidden">
+                    <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.29289 23.7071C7.68342 24.0976 8.31658 24.0976 8.70711 23.7071L15.0711 17.3431C15.4616 16.9526 15.4616 16.3195 15.0711 15.9289C14.6805 15.5384 14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315 15.9289C1.95262 15.5384 1.31946 15.5384 0.928933 15.9289C0.538409 16.3195 0.538409 16.9526 0.928933 17.3431L7.29289 23.7071ZM7 4.37114e-08L7 23L9 23L9 -4.37114e-08L7 4.37114e-08Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="footer__arrow bottom">
+                    <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.29289 23.7071C7.68342 24.0976 8.31658 24.0976 8.70711 23.7071L15.0711 17.3431C15.4616 16.9526 15.4616 16.3195 15.0711 15.9289C14.6805 15.5384 14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315 15.9289C1.95262 15.5384 1.31946 15.5384 0.928933 15.9289C0.538409 16.3195 0.538409 16.9526 0.928933 17.3431L7.29289 23.7071ZM7 4.37114e-08L7 23L9 23L9 -4.37114e-08L7 4.37114e-08Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
         </footer>
     </div>
 </body>
