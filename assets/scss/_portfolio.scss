@@ -20,6 +20,9 @@
             gap: 30px;
 
             .article__card-link {
+                position: relative;
+                z-index: 1;
+
                 &:first-child>.article__card {
                     background-image: url('../images/cloud-skinchanger.jpg');
 

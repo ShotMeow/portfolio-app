@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 50px 0px;
+    z-index: 0;
 
     position: fixed;
     bottom: 0;
@@ -12,6 +13,10 @@
     @media (max-width: 425px) {
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    .footer__social {
+        transition: all 0.5s ease;
     }
 
     &__actions {
@@ -27,19 +32,19 @@
             transform: rotate(180deg);
         }
     }
-}
 
 
-.social__list {
-    display: flex;
-    gap: 30px;
+    .social__list {
+        display: flex;
+        gap: 30px;
 
-    .social__link {
-        color: $secondary;
-        transition: color 0.5s ease;
+        .social__link {
+            color: $secondary;
+            transition: color 0.5s ease;
 
-        &:hover {
-            color: $primary;
+            &:hover {
+                color: $primary;
+            }
         }
     }
 }

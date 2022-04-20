@@ -133,6 +133,7 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 50px 0px;
+  z-index: 0;
   position: fixed;
   bottom: 0;
   width: inherit;
@@ -147,6 +148,11 @@ a {
             flex-direction: column-reverse;
     gap: 30px;
   }
+}
+
+.footer .footer__social {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer__actions {
@@ -170,20 +176,20 @@ a {
           transform: rotate(180deg);
 }
 
-.social__list {
+.footer .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.social__list .social__link {
+.footer .social__list .social__link {
   color: #878787;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.social__list .social__link:hover {
+.footer .social__list .social__link:hover {
   color: #fff;
 }
 
@@ -482,6 +488,11 @@ a {
   gap: 30px;
 }
 
+.portfolio .main__article .article__wrapper .article__card-link {
+  position: relative;
+  z-index: 1;
+}
+
 .portfolio .main__article .article__wrapper .article__card-link:first-child > .article__card {
   background-image: url("../images/cloud-skinchanger.jpg");
 }
@@ -587,6 +598,10 @@ a {
   padding-bottom: 150px;
 }
 
+.contact .article {
+  width: 100%;
+}
+
 .contact .aside__progress {
   height: 100%;
   width: 100%;
@@ -624,5 +639,11 @@ a {
 
 .contact .social__link {
   color: #878787;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.contact .social__link:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
