@@ -65,6 +65,7 @@ a {
 .hidden {
   opacity: 0;
   pointer-events: none;
+  position: fixed;
 }
 
 .header {
@@ -362,6 +363,12 @@ a {
   background-color: #fff;
 }
 
+.about .chapter {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 80%;
+}
+
 .about .article__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,6 +380,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 100px;
+  width: 60vw;
 }
 
 @media (max-width: 1150px) {
@@ -389,7 +397,7 @@ a {
 }
 
 .about .article__wrapper .article__navigator {
-  width: 40%;
+  width: 20%;
 }
 
 .about .article__wrapper .article__navigator .navigator__list {
@@ -455,6 +463,141 @@ a {
 .about .article__wrapper .article__info .article__character {
   font-size: 16px;
   letter-spacing: 0.05em;
+}
+
+.about .article__work .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+.about .article__work .company .company__logo > svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: #2B2D3F;
+  border-radius: 10px;
+}
+
+.about .article__work .company .company__name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.about .article__work .company .company__subtitle {
+  color: #878787;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.about .article__work .company .company__attrs {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.about .article__work .company .company__attrs .company__span {
+  padding: 0px 15px;
+}
+
+.about .article__work .company .company__about {
+  color: #878787;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.about .article__work .company .company__link {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.about .article__technologies .chapter__inner {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.about .article__technologies .chapter__inner .article__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about .article__technologies .chapter__inner .article__button svg {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.about .article__technologies .chapter__inner .active svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.about .article__technologies .chapter__inner .chapter__list {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  gap: 20px;
+}
+
+.about .article__technologies .chapter__inner .chapter__list .chapter__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.about .article__technologies .chapter__inner .chapter__list .chapter__element .chapter__span {
+  color: #878787;
+  font-size: 16px;
+}
+
+.about .article__technologies .chapter__inner .chapter__list .chapter__element .chapter__tech {
+  font-size: 24px;
 }
 
 .portfolio {

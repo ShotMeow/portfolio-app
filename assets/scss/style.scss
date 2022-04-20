@@ -46,6 +46,7 @@ a {
 .hidden {
     opacity: 0;
     pointer-events: none;
+    position: fixed;
 }
 
 @import "_header";
