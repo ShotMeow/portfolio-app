@@ -26,6 +26,10 @@
 
     .article__email {
         font-size: 48px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .article__social-subtitle {

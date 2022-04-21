@@ -2,17 +2,7 @@
     margin-top: 100vh;
     padding: 150px 0px 250px;
 
-    @media (max-width: 768px) {
-        padding: 0px 0px 100px 0px;
-    }
-
     .main__article {
-
-        @media (max-width: 768px) {
-            margin: auto;
-        }
-
-
         .article__wrapper {
             display: flex;
             flex-direction: column;
@@ -25,34 +15,18 @@
 
                 &:first-child>.article__card {
                     background-image: url('../images/cloud-skinchanger.jpg');
-
-                    @media (max-width: 1150px) {
-                        background-image: none;
-                    }
                 }
 
                 &:nth-child(2)>.article__card {
                     background-image: url('../images/anime-zero.jpg');
-
-                    @media (max-width: 1150px) {
-                        background-image: none;
-                    }
                 }
 
                 &:nth-child(3)>.article__card {
                     background-image: url('../images/driving-school.jpg');
-
-                    @media (max-width: 1150px) {
-                        background-image: none;
-                    }
                 }
 
                 &:nth-child(4)>.article__card {
                     background-image: url('../images/yandex-music.jpg');
-
-                    @media (max-width: 1150px) {
-                        background-image: none;
-                    }
                 }
             }
 
@@ -68,6 +42,11 @@
                 border-radius: 5px;
                 box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.25);
                 padding: 30px;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
 
                 .card__info {
                     display: flex;

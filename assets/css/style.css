@@ -288,16 +288,6 @@ a {
   max-width: inherit;
 }
 
-@media (max-width: 425px) {
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 30px;
-  }
-}
-
 .footer .footer__social {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -369,12 +359,6 @@ a {
   width: 65%;
 }
 
-@media (max-width: 768px) {
-  .first-screen .article__text {
-    width: 100%;
-  }
-}
-
 .main__section {
   height: calc(100vh - 127px);
   display: -webkit-box;
@@ -405,12 +389,6 @@ a {
   z-index: -1;
 }
 
-@media (max-width: 1150px) {
-  .main__section .article__title-block {
-    margin-bottom: 50px;
-  }
-}
-
 .main__section .article__title-block .article__title-background {
   opacity: 0.05;
   text-transform: uppercase;
@@ -418,12 +396,6 @@ a {
   font-size: 128px;
   position: absolute;
   top: -60px;
-}
-
-@media (max-width: 1000px) {
-  .main__section .article__title-block .article__title-background {
-    display: none;
-  }
 }
 
 .main__section .article__title-block .article__title {
@@ -493,12 +465,6 @@ a {
   background-color: #878787;
 }
 
-@media (max-width: 768px) {
-  .main__section .main__aside {
-    display: none;
-  }
-}
-
 .about {
   margin-top: 100vh;
   padding: 150px 0px 250px;
@@ -534,19 +500,6 @@ a {
   width: 60vw;
 }
 
-@media (max-width: 1150px) {
-  .about .article__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 50px;
-  }
-}
-
 .about .article__wrapper .article__navigator {
   width: 20%;
 }
@@ -560,21 +513,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 35px;
-}
-
-@media (max-width: 1150px) {
-  .about .article__wrapper .article__navigator .navigator__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media (max-width: 450px) {
-  .about .article__wrapper .article__navigator .navigator__list {
-    gap: 10px;
-  }
 }
 
 .about .article__wrapper .article__navigator .navigator__list .active .navigator__button {
@@ -760,18 +698,6 @@ a {
   padding: 150px 0px 250px;
 }
 
-@media (max-width: 768px) {
-  .portfolio {
-    padding: 0px 0px 100px 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio .main__article {
-    margin: auto;
-  }
-}
-
 .portfolio .main__article .article__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,40 +721,16 @@ a {
   background-image: url("../images/cloud-skinchanger.jpg");
 }
 
-@media (max-width: 1150px) {
-  .portfolio .main__article .article__wrapper .article__card-link:first-child > .article__card {
-    background-image: none;
-  }
-}
-
 .portfolio .main__article .article__wrapper .article__card-link:nth-child(2) > .article__card {
   background-image: url("../images/anime-zero.jpg");
-}
-
-@media (max-width: 1150px) {
-  .portfolio .main__article .article__wrapper .article__card-link:nth-child(2) > .article__card {
-    background-image: none;
-  }
 }
 
 .portfolio .main__article .article__wrapper .article__card-link:nth-child(3) > .article__card {
   background-image: url("../images/driving-school.jpg");
 }
 
-@media (max-width: 1150px) {
-  .portfolio .main__article .article__wrapper .article__card-link:nth-child(3) > .article__card {
-    background-image: none;
-  }
-}
-
 .portfolio .main__article .article__wrapper .article__card-link:nth-child(4) > .article__card {
   background-image: url("../images/yandex-music.jpg");
-}
-
-@media (max-width: 1150px) {
-  .portfolio .main__article .article__wrapper .article__card-link:nth-child(4) > .article__card {
-    background-image: none;
-  }
 }
 
 .portfolio .main__article .article__wrapper .article__card {
@@ -850,6 +752,13 @@ a {
   -webkit-box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.25);
   padding: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio .main__article .article__wrapper .article__card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .portfolio .main__article .article__wrapper .article__card .card__info {
@@ -920,6 +829,10 @@ a {
 
 .contact .article__email {
   font-size: 48px;
+}
+
+.contact .article__email:hover {
+  text-decoration: underline;
 }
 
 .contact .article__social-subtitle {

@@ -23,9 +23,5 @@
         color: $secondary;
         letter-spacing: 0.05em;
         width: 65%;
-
-        @media (max-width: 768px) {
-            width: 100%;
-        }
     }
 }
