@@ -71,6 +71,136 @@ a {
   display: none !important;
 }
 
+@-webkit-keyframes navigatorRise {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes navigatorRise {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes chapterRise {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes chapterRise {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes listRise {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes listRise {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes titleRise {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes titleRise {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes navRise {
+  from {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes navRise {
+  from {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +247,18 @@ a {
   gap: 60px;
 }
 
+.header .header__menu .header__button {
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.header .header__menu .active {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .header .header__menu .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +266,8 @@ a {
   gap: 30px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-animation: navRise 0.5s 1;
+          animation: navRise 0.5s 1;
 }
 
 .footer {
@@ -370,6 +514,8 @@ a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 80%;
+  -webkit-animation: chapterRise 0.5s 1;
+          animation: chapterRise 0.5s 1;
 }
 
 .about .article__wrapper {
@@ -432,6 +578,8 @@ a {
 .about .article__wrapper .article__navigator .navigator__list .active .navigator__button {
   color: #fff;
   font-weight: 600;
+  -webkit-animation: navigatorRise 0.5s 1;
+          animation: navigatorRise 0.5s 1;
 }
 
 .about .article__wrapper .article__navigator .navigator__list .active .navigator__span {
@@ -581,6 +729,8 @@ a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   gap: 20px;
+  -webkit-animation: listRise 0.5s 1;
+          animation: listRise 0.5s 1;
 }
 
 .about .article__technologies .chapter__inner .chapter__list .chapter__element {

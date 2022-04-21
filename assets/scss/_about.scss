@@ -11,6 +11,7 @@
     .chapter {
         transition: all 0.5s ease;
         width: 80%;
+        animation: chapterRise 0.5s 1;
     }
 
     .article__wrapper {
@@ -46,6 +47,7 @@
                     .navigator__button {
                         color: $primary;
                         font-weight: 600;
+                        animation: navigatorRise 0.5s 1;
                     }
 
                     .navigator__span {
@@ -143,8 +145,6 @@
     }
 
     .article__technologies {
-
-
         .chapter__inner {
             position: relative;
             z-index: 1;
@@ -178,6 +178,7 @@
                 flex-direction: column;
                 transition: all 0.5s ease;
                 gap: 20px;
+                animation: listRise 0.5s 1;
 
                 .chapter__element {
                     display: flex;

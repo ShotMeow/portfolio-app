@@ -1,0 +1,59 @@
+@keyframes navigatorRise {
+    from {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes chapterRise {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes listRise {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes titleRise {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navRise {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
