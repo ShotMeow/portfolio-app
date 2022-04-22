@@ -2,7 +2,7 @@ import { positionCheck } from "./positionCheck.js"
 import { routing } from "./routing.js"
 
 export const scroll = () => {
-    let links = document.querySelectorAll('.nav__link')
+    let links = document.querySelectorAll('.header__logo, .nav__link')
     let arrowTop = document.querySelector('.top')
     let arrowBottom = document.querySelector('.bottom')
     let targetID = links[0].getAttribute('href')
@@ -20,7 +20,7 @@ export const scroll = () => {
     })
 
     arrowBottom.addEventListener('click', () => {
-        for (let i = 0; i < links.length; i++) {
+        for (let i = 1; i < links.length; i++) {
             if (links[i].getAttribute('href') == targetID) {
                 targetID = links[i + 1].getAttribute('href')
                 routing(targetID)
@@ -32,7 +32,7 @@ export const scroll = () => {
     })
 
     arrowTop.addEventListener('click', () => {
-        for (let i = 0; i < links.length; i++) {
+        for (let i = 1; i < links.length; i++) {
             if (links[i].getAttribute('href') == targetID) {
                 targetID = links[i - 1].getAttribute('href')
                 routing(targetID)
@@ -47,7 +47,7 @@ export const scroll = () => {
         if (e.wheelDelta > 0) {
             if (links[0].getAttribute('href') == targetID)
                 return
-            for (let i = 0; i < links.length; i++) {
+            for (let i = 1; i < links.length; i++) {
                 if (links[i].getAttribute('href') == targetID) {
                     targetID = links[i - 1].getAttribute('href')
                     routing(targetID)
@@ -58,7 +58,7 @@ export const scroll = () => {
         } else {
             if (links[links.length - 1].getAttribute('href') == targetID)
                 return
-            for (let i = 0; i < links.length; i++) {
+            for (let i = 1; i < links.length; i++) {
                 if (links[i].getAttribute('href') == targetID) {
                     targetID = links[i + 1].getAttribute('href')
                     routing(targetID)
