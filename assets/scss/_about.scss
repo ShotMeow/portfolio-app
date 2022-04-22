@@ -11,8 +11,6 @@
     .chapter {
         transition: all 0.5s ease;
         width: 80%;
-        position: relative;
-        z-index: 1;
         animation: chapterRise 0.5s 1;
     }
 
@@ -133,8 +131,6 @@
 
     .article__technologies {
         .chapter__inner {
-            position: relative;
-            z-index: 1;
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -160,7 +156,6 @@
             }
 
             .chapter__list {
-                z-index: 1;
                 display: flex;
                 flex-direction: column;
                 transition: all 0.5s ease;

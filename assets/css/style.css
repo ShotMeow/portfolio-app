@@ -211,7 +211,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0px;
+  margin: 50px 0px;
   position: fixed;
   top: 0;
   width: inherit;
@@ -280,7 +280,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 50px 0px;
+  margin: 50px 0px;
   z-index: 0;
   position: fixed;
   bottom: 0;
@@ -291,6 +291,7 @@ a {
 .footer .footer__social {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  position: relative;
 }
 
 .footer__actions {
@@ -387,6 +388,7 @@ a {
   position: relative;
   margin-bottom: 150px;
   z-index: -1;
+  white-space: nowrap;
 }
 
 .main__section .article__title-block .article__title-background {
@@ -422,6 +424,12 @@ a {
   width: 1px;
   background-color: #fff;
   opacity: 0.5;
+}
+
+@media (max-height: 700px) {
+  .main__section .page .aside__line {
+    height: 10vh;
+  }
 }
 
 .main__section .page .aside__circle {
@@ -480,8 +488,6 @@ a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 80%;
-  position: relative;
-  z-index: 1;
   -webkit-animation: chapterRise 0.5s 1;
           animation: chapterRise 0.5s 1;
 }
@@ -618,8 +624,6 @@ a {
 }
 
 .about .article__technologies .chapter__inner {
-  position: relative;
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,7 +662,6 @@ a {
 }
 
 .about .article__technologies .chapter__inner .chapter__list {
-  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,11 +713,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-}
-
-.portfolio .main__article .article__wrapper .article__card-link {
-  position: relative;
-  z-index: 1;
 }
 
 .portfolio .main__article .article__wrapper .article__card-link:first-child > .article__card {

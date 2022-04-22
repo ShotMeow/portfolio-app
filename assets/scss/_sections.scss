@@ -12,6 +12,7 @@
         position: relative;
         margin-bottom: 150px;
         z-index: -1;
+        white-space: nowrap;
 
         .article__title-background {
             opacity: 0.05;
@@ -39,6 +40,10 @@
             width: 1px;
             background-color: $primary;
             opacity: 0.5;
+
+            @media (max-height: 700px) {
+                height: 10vh;
+            }
         }
 
         .aside__circle {
